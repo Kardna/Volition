@@ -62,9 +62,9 @@ class Slider {
     this.camera = null;
 
     this.images = [
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg1.jpg',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/bg2.jpg',
-    './img/tower.png'];
+    './img/tower.png',
+    './img/bg1.jpg',
+    './img/bg2.jpg'];
 
 
     this.data = {
@@ -159,7 +159,7 @@ class Slider {
       this.textures.push(texture);
     });
 
-    this.disp = loader.load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/rock-_disp.png', this.render);
+    this.disp = loader.load('./img/rock-_disp.png', this.render);
     this.disp.magFilter = this.disp.minFilter = THREE.LinearFilter;
     this.disp.wrapS = this.disp.wrapT = THREE.RepeatWrapping;
   }
